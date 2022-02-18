@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xd商品管理系统</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./lib/jquery-3.4.1.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/utils.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">xd商品管理系统</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              
+              <li><a href="#">其他页面</a></li>
+              <li><a href="#">其他页面</a></li>
+              <li><a href="#">其他页面</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right hidden">
+                <li><a href="#">欢迎您 <b>炫炫</b></a></li>
+               
+              </ul>
+            <ul class="nav navbar-nav navbar-right ">
+              <li><a href="#">登录</a></li>
+              <li><a href="#">注册</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <div class="container">
+          <button class="btn btn-primary btn-lg btn-set" data-toggle="modal" data-target="#addModal">添加商品</button>
+      <table class="table table-striped table-bordered table-hover table-shop">
+        <thead>
+            <tr>
+                <td>编号</td>
+                <td>商品名称</td>
+                <td>商品价格</td>
+                <td>商品数量</td>
+                <td>操作</td>
+            </tr>
+        </thead>
+        <tbody id="tbody-list">
+          
+            <!-- <tr>
+                <td>1</td>
+                <td>
+                    <span>包包</span>
+                    <input type="text">
+                </td>
+                <td><span>1999</span><input type="text"></td>
+                <td><span>12</span><input type="text"></td>
+                <td>
+                    <button class="btn btn-danger btn-xs btn-delet">删除</button>
+                    <button class="btn btn-warning btn-xs btn-edit" >编辑</button>
+                    <button class="btn btn-success btn-xs btn-ok">确定</button>
+                    <button class="btn  btn-info btn-xs btn-canle">取消</button>
+                </td>
+            </tr> -->
+            <!-- <tr class="edit">
+                <td>1</td>
+                <td>
+                    <span>包包</span>
+                    <input type="text">
+                </td>
+                <td><span>1999</span><input type="text"></td>
+                <td><span>12</span><input type="text"></td>
+                <td>
+                    <button class="btn btn-danger btn-xs btn-del">删除</button>
+                    <button class="btn btn-warning btn-xs btn-edit" >编辑</button>
+                    <button class="btn btn-success btn-xs btn-ok">确定</button>
+                    <button class="btn  btn-info btn-xs btn-canle">取消</button>
+                </td>
+            </tr> -->
+          
+           
+            
+        </tbody>
+      </table>
+    </div>
+    
+   <!-- Modal -->
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">添加商品</h4>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label for="inputName">商品名称</label>
+                <input type="text" class="form-control" id="inputName" placeholder="请输入商品名称">
+              </div>
+              <div class="form-group">
+                <label for="inputPrice">商品价格</label>
+                <input type="email" class="form-control" id="inputPrice" placeholder="请输入商品价格">
+              </div>
+              <div class="form-group">
+                <label for="inputNum">商品数量</label>
+                <input type="email" class="form-control" id="inputNum" placeholder="请输入商品数量">
+              </div>
+              <p id="add-info" class="text-center"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary" id="btn-add">确定</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/select.js"></script>
+  <script src="./js/add.js"></script>
+  <script src="./js/delete.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,22 @@
+.table-shop input{
+    width: 80px; 
+    display: none;
+}
+.table-shop .btn-ok,
+.table-shop .btn-canle{
+    display: none;
+}
+.edit input,
+.edit .btn-ok,
+.edit .btn-canle
+{
+    display:inline-block;
+}
+.edit span,
+.edit .btn-del,
+.edit .btn-edit{
+    display: none;
+}
+.btn-set{
+    margin-bottom: 20px;
+}
